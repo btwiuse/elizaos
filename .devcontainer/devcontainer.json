@@ -2,13 +2,7 @@
 {
   "name": "elizaos-dev",
   "postCreateCommand": "echo unset NODE_OPTIONS >> ~/.bashrc",
-  "dockerFile": "Dockerfile",
-  "build": {
-    "args": {
-      "NODE_VER": "23.3.0",
-      "BUN_VER": "1.2.2"
-    }
-  },
+  "image": "btwiuse/arch:dev",
   "privileged": true,
   "runArgs": [
     "--network=host"
